@@ -61,6 +61,10 @@ textarea {
   flex: 0 0 auto;
   display: inline-flex;
   align-items: center;
+  padding: 10px 16px;
+  border-radius: 18px;
+  background: rgba(255,255,255,.08);
+  border: 1px solid rgba(255,255,255,.12);
 }
 
 .menu-toggle {
@@ -111,9 +115,10 @@ textarea {
 
 .main-nav {
   position: absolute;
-  top: calc(100% + 2px);
+  top: 0;
   left: 0;
   right: 0;
+  z-index: 999;
   max-height: 0;
   overflow: hidden;
   display: flex;
@@ -542,6 +547,7 @@ h3 {
     min-height: var(--header-height);
     padding: 15px 5vw;
     align-items: flex-start;
+    z-index: 1003;
   }
 
   .logo {
@@ -549,15 +555,25 @@ h3 {
   }
 
   .main-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 999;
     display: none;
     grid-template-columns: 1fr;
     gap: 0;
     justify-items: end;
     text-align: right;
+    padding: 0 4vw;
+    background: rgba(19,24,25,.98);
+    border-bottom: 1px solid var(--line);
+    box-shadow: 0 24px 60px rgba(0,0,0,.28);
   }
 
   .site-header.menu-open .main-nav {
     display: grid;
+    padding: 18px 4vw 18px;
   }
 
   .main-nav a {
