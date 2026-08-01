@@ -31,6 +31,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
   sections.forEach(section => observer.observe(section));
 
+  const menuToggle = document.getElementById("menu-toggle");
+  const siteHeader = document.getElementById("site-header");
+
+  menuToggle.addEventListener("click", () => {
+    const isOpen = siteHeader.classList.toggle("menu-open");
+    menuToggle.setAttribute("aria-expanded", String(isOpen));
+  });
+
+  document.addEventListener("scroll", () => {
+    if (siteHeader.classList.contains("menu-open")) {
+      siteHeader.classList.remove("menu-open");
+      menuToggle.setAttribute("aria-expanded", "false");
+    }
+  });
+
   // Close-to-real preliminary contact form behavior.
   // A live email/PHP/Formspree/etc. endpoint can be connected later.
   form.addEventListener("submit", (event) => {
