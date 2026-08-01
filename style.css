@@ -2,7 +2,7 @@
    Replace assets and the temporary logo when final PNG/SVG files are available. */
 
 :root {
-  --bg: #111111;
+  --bg: rgb(19, 24, 25);
   --bg-soft: #1a1a1a;
   --text: #f4f4f4;
   --muted: #b5b5b5;
@@ -60,9 +60,15 @@ textarea {
 
 .logo {
   flex: 0 0 auto;
-  font-size: 25px;
-  font-weight: 700;
-  letter-spacing: .16em;
+  display: inline-flex;
+  align-items: center;
+}
+
+.logo-image {
+  display: block;
+  height: 46px;
+  width: auto;
+  max-width: 220px;
 }
 
 .logo-mark {
@@ -84,6 +90,7 @@ textarea {
   font-weight: 700;
   white-space: nowrap;
   padding: 8px 0;
+  color: rgb(88, 119, 129);
 }
 
 .main-nav a::after {
@@ -217,11 +224,11 @@ h3 {
 }
 
 .about {
-  background: var(--bg-soft);
+  background: var(--bg);
 }
 
 .services {
-  background: #151515;
+  background: var(--bg);
 }
 
 .section-intro {
@@ -299,7 +306,7 @@ h3 {
 }
 
 .news {
-  background: var(--bg-soft);
+  background: var(--bg);
 }
 
 .news-grid {
@@ -341,7 +348,7 @@ h3 {
 }
 
 .contact {
-  background: #151515;
+  background: var(--bg);
 }
 
 .contact-form {
