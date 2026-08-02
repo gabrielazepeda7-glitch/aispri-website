@@ -30,6 +30,7 @@ For a standard static hosting setup, upload:
 - script.js
 - the assets folder
 
+
 Place them in the public_html directory (or the document root for the domain).
 
 ## Important next step
