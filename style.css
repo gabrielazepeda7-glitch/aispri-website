@@ -535,6 +535,7 @@ h3 {
     align-items: center;
     padding: 10px 5vw;
     overflow: visible;
+    min-height: 64px;
   }
 
   .menu-toggle {
@@ -542,7 +543,7 @@ h3 {
   }
 
   .site-header.menu-open {
-    padding-bottom: 190px;
+    padding-bottom: 210px;
   }
 
   .site-header.menu-open .menu-toggle {
@@ -602,14 +603,16 @@ h3 {
     padding: 10px 5vw;
     align-items: center;
     z-index: 1003;
+    min-height: 64px;
   }
 
   .site-header.menu-open {
-    padding-bottom: 210px;
+    padding-bottom: 70px;
   }
 
   .logo {
     font-size: 21px;
+    align-self: center;
   }
 
   .main-nav {
