@@ -534,17 +534,27 @@ h3 {
   .site-header {
     align-items: center;
     padding: 10px 5vw;
+    overflow: visible;
   }
 
   .menu-toggle {
     display: inline-flex;
   }
 
+  .site-header.menu-open {
+    padding-bottom: 190px;
+  }
+
+  .site-header.menu-open .menu-toggle {
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.95);
+  }
+
   .main-nav {
     position: absolute;
-    top: 50%;
-    right: calc(5vw + 48px + 8px);
-    transform: translateY(-50%);
+    top: 10px;
+    right: 5vw;
     z-index: 999;
     display: none;
     flex-direction: column;
@@ -594,13 +604,17 @@ h3 {
     z-index: 1003;
   }
 
+  .site-header.menu-open {
+    padding-bottom: 210px;
+  }
+
   .logo {
     font-size: 21px;
   }
 
   .main-nav {
-    top: 50%;
-    right: calc(5vw + 40px + 8px);
+    top: 10px;
+    right: 5vw;
     gap: 0;
     text-align: right;
     padding: 0;
