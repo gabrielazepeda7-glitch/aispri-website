@@ -12,7 +12,7 @@
 <body>
   <header class="site-header" id="site-header">
     <a class="logo" href="#inicio" aria-label="AISPRI - Inicio">
-      <img src="elementos/AISPRI LOGO AZUL.svg" alt="AISPRI logo" class="logo-image">
+      <img src="elementos/AISPRI_LOGO_AZUL.svg" alt="AISPRI logo" class="logo-image">
     </a>
 
     <button class="menu-toggle" id="menu-toggle" aria-expanded="false" aria-label="Abrir menú">
@@ -40,7 +40,10 @@
         <a class="button" href="#nosotros">CONÓCENOS</a>
       </div>
       <div class="hero-media">
-        <img src="elementos/ELEMENTOS WEB ESCRITORIO (1).png" alt="AISPRI hero">
+        <picture>
+          <source media="(max-width: 600px)" srcset="elementos/movil_1.png">
+          <img src="elementos/desktop_1.png" alt="AISPRI hero">
+        </picture>
       </div>
     </section>
 
@@ -68,7 +71,7 @@
       </div>
 
       <div class="services-image">
-        <img src="elementos_movil/PNG PARA AISPRI WEB (2).png" alt="Servicios AISPRI" />
+        <img src="elementos/movil_2.png" alt="Servicios AISPRI" />
       </div>
 
       <div class="service-grid">

@@ -311,7 +311,7 @@ h3 {
 }
 
 .about {
-  background: var(--bg) url("elementos_movil/PNG PARA AISPRI WEB (1).png") center center / cover no-repeat;
+  background: var(--bg) url("elementos/desktop_2.png") center center / cover no-repeat;
 }
 
 .about .section-copy {
