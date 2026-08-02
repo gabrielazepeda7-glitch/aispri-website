@@ -3,7 +3,6 @@
 
 :root {
   --bg: rgb(19, 24, 25);
-  --bg-soft: #1a1a1a;
   --text: #f4f4f4;
   --muted: #b5b5b5;
   --line: rgba(255, 255, 255, .18);
@@ -107,10 +106,6 @@ textarea {
   height: 46px;
   width: auto;
   max-width: 220px;
-}
-
-.logo-mark {
-  display: inline-block;
 }
 
 .main-nav {
@@ -283,23 +278,6 @@ h3 {
   letter-spacing: .15em;
 }
 
-/* .hero-media {
-  width: 100%;
-  overflow: hidden;
-} */
-
-/* .hero-media picture,
-.hero-media img {
-  display: block;
-  width: 100%;
-} */
-
-/* .hero-image {
-  height: auto;
-  width: 100%;
-  max-width: 100%;
-} */
-
 .services-image {
   width: 100%;
   margin: 40px 0 0;
@@ -311,16 +289,6 @@ h3 {
   height: auto;
   border-radius: 18px;
 }
-
-/* @media (max-width: 600px) {
-  .hero-image {
-    width: 150%;
-    max-width: none;
-    margin-left: -25%;
-    height: auto;
-    display: block;
-  }
-} */
 
 .section-grid {
   max-width: var(--max-width);
@@ -642,25 +610,6 @@ h3 {
     padding-bottom: 0;
   }
 
-  /* .hero-media {
-    width: 100vw;
-    max-width: 100vw;
-    margin-left: calc(50% - 50vw);
-  }
-
-  .hero-media picture {
-    display: block;
-    width: 100%;
-  } */
-
-  /* .hero-image {
-    width: 150%;
-    max-width: none;
-    margin-left: -25%;
-    height: auto;
-    display: block;
-  } */
-
   h1 {
     font-size: clamp(42px, 12vw, 64px);
   }
@@ -672,10 +621,6 @@ h3 {
   .hero-copy {
     font-size: 16px;
   }
-
-  /* .hero-image {
-    min-height: auto;
-  } */
 
   .service-grid,
   .news-grid,
