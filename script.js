@@ -39,6 +39,13 @@ document.addEventListener("DOMContentLoaded", () => {
     menuToggle.setAttribute("aria-expanded", String(isOpen));
   });
 
+  navLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      siteHeader.classList.remove("menu-open");
+      menuToggle.setAttribute("aria-expanded", "false");
+    });
+  });
+
   document.addEventListener("scroll", () => {
     if (siteHeader.classList.contains("menu-open")) {
       siteHeader.classList.remove("menu-open");

@@ -46,12 +46,12 @@ textarea {
   top: 0;
   left: 0;
   right: 0;
-  min-height: var(--header-height);
-  padding: 18px 4vw;
+  min-height: auto;
+  padding: 12px 4vw;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 30px;
+  gap: 16px;
   background: rgba(19, 24, 25, 0.96);
   border-bottom: 1px solid var(--line);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
@@ -62,8 +62,8 @@ textarea {
   flex: 0 0 auto;
   display: inline-flex;
   align-items: center;
-  padding: 10px 16px;
-  border-radius: 18px;
+  padding: 8px 12px;
+  border-radius: 14px;
   background: rgba(255, 255, 255, .08);
   border: 1px solid rgba(255, 255, 255, .12);
 }
@@ -73,12 +73,12 @@ textarea {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 6px;
-  width: 44px;
-  height: 44px;
+  gap: 5px;
+  width: 40px;
+  height: 40px;
   padding: 0;
   border: 1px solid rgba(255, 255, 255, .18);
-  border-radius: 14px;
+  border-radius: 12px;
   background: rgba(255, 255, 255, .08);
   cursor: pointer;
   transition: background .3s ease, opacity .3s ease, transform .3s ease;
@@ -98,9 +98,9 @@ textarea {
 }
 
 .site-header.menu-open .menu-toggle {
-  opacity: 0;
-  pointer-events: none;
-  transform: scale(0.95);
+  opacity: 1;
+  pointer-events: auto;
+  transform: scale(1);
 }
 
 .logo-image {
@@ -528,12 +528,12 @@ h3 {
 /* Tablet */
 @media (max-width: 900px) {
   :root {
-    --header-height: 110px;
+    --header-height: 82px;
   }
 
   .site-header {
     align-items: center;
-    padding: 16px 5vw;
+    padding: 10px 5vw;
   }
 
   .menu-toggle {
@@ -542,18 +542,16 @@ h3 {
 
   .main-nav {
     position: absolute;
-    top: calc(100% + 8px);
-    left: 0;
-    right: 0;
+    top: 50%;
+    right: calc(5vw + 48px + 8px);
+    transform: translateY(-50%);
     z-index: 999;
     display: none;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-    padding: 18px 5vw;
-    background: rgba(19, 24, 25, 0.98);
-    border-bottom: 1px solid var(--line);
-    box-shadow: 0 24px 60px rgba(0, 0, 0, .28);
+    align-items: flex-end;
+    gap: 8px;
+    padding: 0;
+    background: transparent;
   }
 
   .site-header.menu-open .main-nav {
@@ -586,12 +584,12 @@ h3 {
 /* Smartphone */
 @media (max-width: 600px) {
   :root {
-    --header-height: 205px;
+    --header-height: 82px;
   }
 
   .site-header {
-    min-height: var(--header-height);
-    padding: 15px 5vw;
+    min-height: auto;
+    padding: 10px 5vw;
     align-items: center;
     z-index: 1003;
   }
@@ -601,10 +599,11 @@ h3 {
   }
 
   .main-nav {
-    top: calc(100% + 8px);
+    top: 50%;
+    right: calc(5vw + 40px + 8px);
     gap: 0;
     text-align: right;
-    padding: 18px 4vw;
+    padding: 0;
   }
 
   .main-nav a {
