@@ -272,6 +272,18 @@ h3 {
   max-width: 100%;
 }
 
+.services-image {
+  width: 100%;
+  margin: 40px 0 0;
+}
+
+.services-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 18px;
+}
+
 @media (max-width: 600px) {
   .hero-image {
     width: 150%;
@@ -303,7 +315,11 @@ h3 {
 }
 
 .about {
-  background: var(--bg);
+  background: var(--bg) url("elementos_movil/PNG PARA AISPRI WEB (1).png") center center / cover no-repeat;
+}
+
+.about .section-copy {
+  color: var(--muted);
 }
 
 .services {
