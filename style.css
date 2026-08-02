@@ -311,7 +311,38 @@ h3 {
 }
 
 .about {
-  background: var(--bg) url("elementos/desktop_2.png") center center / cover no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.about-media {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.about-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.about::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, rgba(19, 24, 25, 0.95) 0%, rgba(19, 24, 25, 0.75) 40%, rgba(19, 24, 25, 0.3) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.about .section-grid {
+  position: relative;
+  z-index: 2;
 }
 
 .about .section-copy {
