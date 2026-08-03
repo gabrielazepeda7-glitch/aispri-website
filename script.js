@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const header = document.getElementById("site-header");
   const navLinks = [...document.querySelectorAll(".main-nav a")];
   const sections = [...document.querySelectorAll("main section[id]")];
-  const form = document.getElementById("contact-form");
   const formNote = document.getElementById("form-note");
 
   // Keep the navigation highlight synchronized with the section currently visible.
@@ -63,11 +62,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Close-to-real preliminary contact form behavior.
-  // A live email/PHP/Formspree/etc. endpoint can be connected later.
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    formNote.textContent =
-      "Gracias. Este formulario es una versión preliminar; falta conectar el envío de mensajes.";
-  });
 });
