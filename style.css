@@ -251,6 +251,22 @@ textarea {
   margin-bottom: 28px;
 }
 
+.eyebrow-svg,
+.footer-logo-svg {
+  display: block;
+  max-width: 176px;
+  height: auto;
+}
+
+.eyebrow-svg {
+  margin-bottom: 28px;
+}
+
+.footer-logo-svg {
+  width: auto;
+  max-height: 32px;
+}
+
 h1,
 h2 {
   font-weight: 700;
