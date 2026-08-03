@@ -35,7 +35,10 @@ document.addEventListener("DOMContentLoaded", () => {
   if (splashScreen) {
     window.setTimeout(() => {
       splashScreen.classList.add("is-hidden");
-    }, 900);
+      splashScreen.addEventListener("animationend", () => {
+        splashScreen.remove();
+      }, { once: true });
+    }, 1200);
   }
 
   const menuToggle = document.getElementById("menu-toggle");

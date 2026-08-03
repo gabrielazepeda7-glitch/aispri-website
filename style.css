@@ -38,13 +38,26 @@ body {
   justify-content: center;
   background: #ffffff;
   opacity: 1;
-  transition: opacity 0.8s ease, visibility 0.8s ease;
+  transform: scale(1);
   visibility: visible;
+  will-change: opacity, transform;
 }
 
 .splash-screen.is-hidden {
-  opacity: 0;
-  visibility: hidden;
+  animation: splash-fade-out 1s ease forwards;
+  pointer-events: none;
+}
+
+@keyframes splash-fade-out {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  to {
+    opacity: 0;
+    transform: scale(1.03);
+  }
 }
 
 .splash-logo {
