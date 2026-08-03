@@ -254,7 +254,7 @@ textarea {
 .eyebrow-svg,
 .footer-logo-svg {
   display: block;
-  max-width: 176px;
+  max-width: 100px;
   height: auto;
 }
 
@@ -264,7 +264,7 @@ textarea {
 
 .footer-logo-svg {
   width: auto;
-  max-height: 32px;
+  max-height: 26px;
 }
 
 h1,
