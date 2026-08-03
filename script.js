@@ -1,6 +1,7 @@
 // AISPRI — Preliminary website interactions
 
 document.addEventListener("DOMContentLoaded", () => {
+  const splashScreen = document.getElementById("splash-screen");
   const header = document.getElementById("site-header");
   const navLinks = [...document.querySelectorAll(".main-nav a")];
   const sections = [...document.querySelectorAll("main section[id]")];
@@ -30,6 +31,12 @@ document.addEventListener("DOMContentLoaded", () => {
   );
 
   sections.forEach(section => observer.observe(section));
+
+  if (splashScreen) {
+    window.setTimeout(() => {
+      splashScreen.classList.add("is-hidden");
+    }, 900);
+  }
 
   const menuToggle = document.getElementById("menu-toggle");
   const siteHeader = document.getElementById("site-header");
