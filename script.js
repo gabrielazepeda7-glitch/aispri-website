@@ -1,6 +1,8 @@
 // AISPRI — Preliminary website interactions
 
 document.addEventListener("DOMContentLoaded", () => {
+  document.body.classList.add("site-ready");
+
   const splashScreen = document.getElementById("splash-screen");
   const header = document.getElementById("site-header");
   const navLinks = [...document.querySelectorAll(".main-nav a")];
